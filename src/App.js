@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Playlist from "./component/Playlist"
 import Form from "./component/Form";
 import Nav from "./component/Nav"
 
@@ -14,8 +15,6 @@ const emptySong = {
   artist: "",
   duration: ""
 }
-
-const [selectedSong, setSelectedSong] = React.useState(emptySong)
 
 const getSongs = () => {
 fetch(url + "/tunes/")
@@ -51,6 +50,8 @@ fetch(url + "/tunes/" + song._id, {
   return (
     <main>
      <Nav/>
+     <Playlist
+      songs = {songs}/>
      <Form
       song={emptySong}
       handleSubmit={handleCreate}
