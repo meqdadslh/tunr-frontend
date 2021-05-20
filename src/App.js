@@ -49,13 +49,13 @@ fetch(url + "/tunes/" + song._id, {
 })
 }
   return (
-    <main>
+    <div className="App">
      <Nav/>
      <Form
       song={emptySong}
       handleSubmit={handleCreate}
       />
-    </main>
+    </div>
   );
 }
 
