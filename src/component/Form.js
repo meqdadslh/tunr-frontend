@@ -38,7 +38,7 @@ const Form = (props) => {
 
             <label htmlFor="duration">DURATION</label>
             <input 
-                type="string"
+                type="text"
                 id="duration"
                 placeholder="duration"
                 value={formData.duration}
