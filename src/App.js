@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import Form from "./Form";
-import Nav from "./Nav"
+import Form from "./component/Form";
+import Nav from "./component/Nav"
 
 function App() {
 
-const url = ""
+const url = "https://ams-329-tunr.herokuapp.com"
 
 const [songs, setSongs] = React.useState([])
 
@@ -52,7 +52,6 @@ fetch(url + "/tunes/" + song._id, {
     <main>
      <Nav/>
      <Form
-      label="create"
       song={emptySong}
       handleSubmit={handleCreate}
       />
