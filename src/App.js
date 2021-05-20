@@ -1,8 +1,7 @@
 import React from "react";
 import "./App.css";
-import { Route, Link, Switch } from "react-router-dom";
-import Display from "./Display";
 import Form from "./Form";
+import Nav from "./Nav"
 
 function App() {
 
@@ -50,8 +49,8 @@ fetch(url + "/tunes/" + song._id, {
 })
 }
   return (
-      <main>
-     <Heder/>
+    <main>
+     <Nav/>
      <Form
       label="create"
       song={emptySong}
