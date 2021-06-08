@@ -16,7 +16,8 @@ const Form = (props) => {
 
     return (
         <div className="wrapper">
-        <h1><b>ADD A NEW SONG</b></h1>
+            <hr></hr>
+        <h1>ADD A NEW SONG</h1>
         <form onSubmit={handleSubmit}>
           <section>
             <label htmlFor="title">TITLE</label>
@@ -38,7 +39,7 @@ const Form = (props) => {
 
             <label htmlFor="duration">DURATION</label>
             <input 
-                type="string"
+                type="text"
                 id="duration"
                 placeholder="duration"
                 value={formData.duration}
