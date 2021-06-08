@@ -60,7 +60,11 @@ section {
 button {
   margin-top: 20px;
   padding: 10px 30px;
-
+  border-radius: 10px;
+}
+button:hover{
+  background-color: thistle;
+  color: white;
 }
 
 
