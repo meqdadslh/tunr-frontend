@@ -48,7 +48,7 @@ fetch(url + "/tunes/" + song._id, {
 })
 }
   return (
-    <div className="App">
+    <main>
      <Nav/>
      <Playlist
       songs = {songs}/>
@@ -56,7 +56,7 @@ fetch(url + "/tunes/" + song._id, {
       song={emptySong}
       handleSubmit={handleCreate}
       />
-    </div>
+    </main>
   );
 }
 

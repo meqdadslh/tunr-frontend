@@ -1,68 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
+.App {
   text-align: center;
-  background-color: lightgrey;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Kanit', sans-serif;
-}
-/* nav secion */
-.nav {
-padding : 10px;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.nav div.logo {
-  text-align: left;
-  padding-left: 50px;
-  font-weight: 700;
-  font-size: 50px;
-}
-.nav div.header {
-  text-align: right;
-  padding-right: 40px;
-
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-hr {
-  border-top: 3px solid black;
-  border-radius: 5px;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-/* FORM SECTION */
-form {
-  padding: 20px 40px;
+.App-link {
+  color: #61dafb;
 }
 
-/* charts with palceholder */
-input {
-  padding: 20px;
-  border-radius: 10px;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-label {
-  font-weight: 600;
-  padding-top: 10px;
-}
-/* elements inside the form */
-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-
-/* submit button ADD A SONG. its beter to have a class name */
-button {
-  margin-top: 20px;
-  padding: 10px 30px;
-
-}
-
-
-
-
