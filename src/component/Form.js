@@ -19,31 +19,31 @@ const Form = (props) => {
         <h1><b>ADD A NEW SONG</b></h1>
         <form onSubmit={handleSubmit}>
           <section>
-            <label htmlFor="title">TITLE</label>
+            <div className="title"><label htmlFor="title">TITLE</label><br/>
             <input 
                 type="text"
                 id="title"
                 placeholder="title"
                 value={formData.title}
                 onChange={handleChange}
-            />
-            <label htmlFor="artist">ARTIST</label>
+            /></div>
+            <div className="artist"><label htmlFor="artist">ARTIST</label><br/>
             <input 
                 type="text"
                 id="artist"
                 placeholder="artist"
                 value={formData.artist}
                 onChange={handleChange}
-            />
+            /></div>
 
-            <label htmlFor="duration">DURATION</label>
+            <div className="duration"><label htmlFor="duration">DURATION</label><br/>
             <input 
                 type="string"
                 id="duration"
                 placeholder="duration"
                 value={formData.duration}
                 onChange={handleChange}
-            />
+            /></div>
           </section>
           <button type ="submit"><b>ADD NEW SONG</b></button>
 
